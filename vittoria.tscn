@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bxk3ta7xwkhek"]
+
+[ext_resource type="Script" uid="uid://pv6uqpj7vvf1" path="res://vittoria.gd" id="1_582tp"]
+[ext_resource type="Texture2D" uid="uid://dxwhh7ovshxun" path="res://Vittoria.png" id="1_qr1n1"]
+[ext_resource type="AudioStream" uid="uid://b5cwoa8aeltfo" path="res://menusound.wav" id="3_quta0"]
+
+[node name="Vittoria" type="Node2D" unique_id=1517640409]
+script = ExtResource("1_582tp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1768903791]
+
+[node name="Sfondo" type="TextureRect" parent="CanvasLayer" unique_id=1519248817]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qr1n1")
+stretch_mode = 6
+
+[node name="Titolo" type="Label" parent="CanvasLayer" unique_id=976021134]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -527.0
+offset_top = -280.0
+offset_right = 527.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "VENDETTA COMPIUTA"
+
+[node name="BottoneMenu" type="Button" parent="CanvasLayer" unique_id=1757613259]
+offset_left = 74.0
+offset_top = 505.0
+offset_right = 383.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 100
+text = "MENU"
+
+[node name="Musica" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=948629385]
+stream = ExtResource("3_quta0")
+volume_db = -30.0

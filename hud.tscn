@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bex8yntkj72nu"]
+
+[ext_resource type="Script" uid="uid://cmq7ue3u5m3y5" path="res://hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1194797616]
+script = ExtResource("1_37p78")
+
+[node name="BottoneSinistra" type="Button" parent="." unique_id=124091073]
+offset_left = 200.0
+offset_top = 700.0
+offset_right = 294.0
+offset_bottom = 845.0
+theme_override_font_sizes/font_size = 100
+text = "←"
+
+[node name="BottoneDestra" type="Button" parent="." unique_id=205583064]
+offset_left = 300.0
+offset_top = 700.0
+offset_right = 394.0
+offset_bottom = 845.0
+theme_override_font_sizes/font_size = 100
+text = "→"
+
+[node name="BottoneInteragisci" type="Button" parent="." unique_id=872139516]
+offset_left = 1700.0
+offset_top = 700.0
+offset_right = 1764.0
+offset_bottom = 845.0
+theme_override_font_sizes/font_size = 100
+text = "E"
+
+[node name="BottoneSalto" type="Button" parent="." unique_id=865867204]
+offset_left = 1900.0
+offset_top = 700.0
+offset_right = 1955.0
+offset_bottom = 845.0
+theme_override_font_sizes/font_size = 100
+text = "↑"
